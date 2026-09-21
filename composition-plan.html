@@ -133,6 +133,68 @@
                             overlap surrounding content.
                         </td>
                     </tr>
+                    <tr>
+                        <td>Infinity medallion</td>
+                        <td>
+                            Visually represents 8 — Infinity and reinforces the story's
+                            discussion of the infinite Creator.
+                        </td>
+                        <td>
+                            The image remains visible and readable as a normal responsive
+                            image without the shape-wrap enhancement.
+                        </td>
+                        <td>
+                            A 50% border radius creates the circular medallion, while
+                            shape-outside creates an editorial circular text wrap with
+                            additional spacing provided by shape-margin.
+                        </td>
+                        <td>
+                            The image remains in the normal document flow. At wider viewport
+                            widths it floats inline-start so surrounding story text can wrap
+                            around its circular shape. It does not use a z-index or create
+                            an intentional stacking layer.
+                        </td>
+                        <td>
+                            If shape-outside is unsupported or disabled, the text uses the
+                            image's normal rectangular float boundary and the story remains
+                            complete and readable.
+                        </td>
+                        <td>
+                            Verify the circular border radius and text wrap at 1280px.
+                            Disable shape-outside and confirm that all story content remains
+                            complete and readable.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Revelation portal</td>
+                        <td>
+                            Provides a decorative visual connection to 4 — Revelation,
+                            which the story describes as a doorway.
+                        </td>
+                        <td>
+                            A simple gold rectangular decorative shape appears before the
+                            Revelation paragraph.
+                        </td>
+                        <td>
+                            A clip-path polygon changes the rectangle into a portal-like
+                            shape, reinforcing the doorway concept without clipping or
+                            hiding essential story content.
+                        </td>
+                        <td>
+                            The decorative element remains in normal document flow and does
+                            not use a z-index or create an intentional stacking layer.
+                        </td>
+                        <td>
+                            If clip-path is unsupported or disabled, the decoration returns
+                            to its rectangular baseline. The Revelation text remains
+                            complete and readable.
+                        </td>
+                        <td>
+                            Verify the portal shape at 1280px. Disable clip-path in Developer
+                            Tools and confirm that the decoration becomes rectangular while
+                            all story content remains complete and readable.
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </body>
