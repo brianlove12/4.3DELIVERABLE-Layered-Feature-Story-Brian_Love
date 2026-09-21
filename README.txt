@@ -7,3 +7,5 @@ START HERE: This folder is the required scaffold for the Module 4 Assessment, no
 5. Merge your Module 1 reset, tokens, typography, and components into styles.css. Replace starter demonstrations with your own justified design; do not submit the starter styling unchanged.
 6. Preserve logical source order. Use Grid/Flexbox for primary layout and positioning only for bounded spatial relationships.
 7. Use native HTML and CSS only—no JavaScript. Test all enhancements and their fallbacks according to the Canvas instructions.
+
+Complete L1 story and source order
