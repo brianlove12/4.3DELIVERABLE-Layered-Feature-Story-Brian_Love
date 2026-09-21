@@ -45,13 +45,93 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Example only</td>
-                        <td>Replace</td>
-                        <td>Replace</td>
-                        <td>Replace</td>
-                        <td>Replace</td>
-                        <td>Replace</td>
-                        <td>Replace</td>
+                        <td>Issue badge</td>
+                        <td>
+                            Identifies the story as covering 0–10 Ten Spiritual Vibrations.
+                        </td>
+                        <td>
+                            Inline badge following the introductory header content.
+                        </td>
+                        <td>
+                            Relative/absolute positioning anchors the badge to the upper-right
+                            of the feature header at wider viewport widths.
+                        </td>
+                        <td>
+                            The feature header is the containing block because it uses
+                            <code>position: relative</code>. The badge does not create a new
+                            stacking context.
+                        </td>
+                        <td>
+                            Below 52rem, absolute positioning disengages and the badge returns
+                            to normal flow.
+                        </td>
+                        <td>
+                            Verify at 320px and 1280px that the badge does not cover the title,
+                            introduction, or other content.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Story guide</td>
+                        <td>
+                            Keeps the two story-section navigation links available while
+                            reading the feature on wider screens.
+                        </td>
+                        <td>
+                            The story guide appears in normal flow before the article on
+                            narrow screens.
+                        </td>
+                        <td>
+                            Sticky positioning keeps the guide near the top of the viewport
+                            while the reader scrolls through the story.
+                        </td>
+                        <td>
+                            The story guide is a Grid item inside <code>main</code>. Its
+                            <code>z-index</code> uses the documented
+                            <code>--layer-sticky</code> token.
+                        </td>
+                        <td>
+                            Below 52rem, sticky positioning disengages and the guide returns
+                            to normal flow in the single-column layout.
+                        </td>
+                        <td>
+                            Verify sticky behavior and both navigation links at 1280px.
+                            Verify that the guide scrolls normally and does not obscure
+                            content at 320px.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Pull quote</td>
+                        <td>
+                            Emphasizes the statement “Love is what we have when all the
+                            questions are over” and creates an editorial focal point.
+                        </td>
+                        <td>
+                            The blockquote remains in normal document flow between the
+                            surrounding story paragraphs.
+                        </td>
+                        <td>
+                            At wider viewport widths, a negative inline-start margin creates
+                            a controlled overlap beyond the normal article text edge.
+                            Relative positioning and the raised layer token control its
+                            painting order.
+                        </td>
+                        <td>
+                            The pull quote remains positioned relative to its normal-flow
+                            location and uses <code>--layer-raised</code> for its
+                            <code>z-index</code>.
+                        </td>
+                        <td>
+                            Below 52rem, the negative margin and positioned enhancement
+                            disengage, returning the quote to its normal-flow presentation.
+                        </td>
+                        <td>
+                            At 1280px, verify that the overlap is visible without covering
+                            navigation, prose, or creating horizontal scrolling. At 320px,
+                            verify that the quote remains within the viewport and does not
+                            overlap surrounding content.
+                        </td>
                     </tr>
                 </tbody>
             </table>

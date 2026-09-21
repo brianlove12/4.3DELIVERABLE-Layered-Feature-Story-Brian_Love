@@ -8,4 +8,6 @@ START HERE: This folder is the required scaffold for the Module 4 Assessment, no
 6. Preserve logical source order. Use Grid/Flexbox for primary layout and positioning only for bounded spatial relationships.
 7. Use native HTML and CSS only—no JavaScript. Test all enhancements and their fallbacks according to the Canvas instructions.
 
-Complete L1 story and source order
+Project Progress
+
+L1 — Story and source order completed.
